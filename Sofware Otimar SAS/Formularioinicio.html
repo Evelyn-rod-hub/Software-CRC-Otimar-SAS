@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="css/styleformularios.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="form-content">
+            <img class="logo" src="Img/logo_otimar.png" alt="">
+            <h1 id="title">Bienvenido</h1> <!-- Titulo formulario -->
+            <h2 id="title">Formulario de Registro</h2> <!-- Titulo formulario -->
+
+            <form action="validar.php" method="POST">
+
+                <div class="input-group">
+                    <!--casilla nombre -->
+                    <div class="input-field" id="nameInput">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Nombre completo">
+                    </div>
+
+                    <!-- casilla tipo documento-->
+                    <div class="documento">
+                        <i class="fa-solid fa-id-card"></i>
+                        <label for="documento">Tipo documento:</label>
+                        <select name="documento" id="documento" form="input-group">
+                            <option value="cedula">CC</option>
+                            <option value="cedula">TI</option>
+                            <option value="dni">DNI</option>
+                            <option value="cpf">CPF</option>
+                        </select>
+
+                        <!-- casilla documento-->
+                        <div class="input-field">
+                        <i class="fa-solid fa-id-card"></i>
+                            <input type="text" placeholder="Numero documento">
+                        </div>
+
+                    </div>
+                    <!-- casilla nacionalidad-->
+                    <div class="input-field">
+                        <i class="fa-solid fa-passport"></i>
+                        <input type="text" placeholder="Nacionalidad">
+                    </div>
+                    <!-- casilla Celular-->
+                    <div class="input-field">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <input type="text" placeholder="Celular">
+                    </div>
+                    <!-- casilla email-->
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="email">
+                    </div>
+                    <!-- casilla Fecha de nacimiento-->
+                    <div class="input-field">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <label for="nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" placeholder="Fecha de nacimiento">
+                    </div>
+                    <!-- casilla usuario-->
+                    <div class="input-field" id="nameInput">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Usuario">
+                    </div>
+                    <!-- casilla Contraseña-->
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="text" placeholder="Contraseña">
+                    </div>
+
+                </div>
+
+                <a href="Formlogin.html">
+                    <div class="btn-field">
+                        <button id="singUp" type="button">Registrarme</button>
+                    </div>
+                </a>
+
+                <div class="forgotpwd">
+                    <label>¿Olvidaste tu contraseña?</label> <a href="#">Click aquí</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="scriptformularios"></script>
+</body>
+
+</html>

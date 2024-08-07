@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="css/styleformularios.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <div class="container">
+    
+        <div class="form-content">
+            <img class="logo" src="Img/logo_otimar.png" alt="">
+            <h1 id="title">Bienvenido</h1> <!-- Titulo formulario -->
+            <h2 id="title">Ingrese usuario y contraseña</h2> <!-- Titulo formulario -->
+    
+            <form action="validar.php" method="POST">
+    
+                <div class="input-group">
+                    
+                    <!-- casilla usuario-->
+                    <div class="input-field" id="nameInput">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Usuario">
+                    </div>
+                    <!-- casilla Contraseña-->
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="text" placeholder="Contraseña">
+                    </div>
+    
+                </div>
+
+                <a href="index.html">
+                    <div class="btn-field">
+                        <button id="singUp" type="button">Iniciar sesión</button>
+                    </div>
+                </a>
+    
+                <div class="forgotpwd">
+                    <label>¿Olvidaste tu contraseña?</label> <a href="#">Click aquí</a>
+                </div>
+    
+            </form>
+    
+        </div>
+    </div>
+    
+    <script src="scriptformularios"></script>
+
+    
+</body>
+
+</html>
