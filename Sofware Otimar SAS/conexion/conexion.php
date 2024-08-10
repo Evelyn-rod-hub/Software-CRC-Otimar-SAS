@@ -2,7 +2,7 @@
 $host = "localhost"; // MySQL server hostname (usually "localhost" on XAMPP)
 $user = "root"; // MySQL username (default is "root" on XAMPP)
 $password = ""; // MySQL password (default is empty on XAMPP)
-$database = "registro"; // Name of the database you created
+$database = "crc_otimar_sas"; // Name of the database you created
 
 // Create a connection
 $conn = new mysqli($host, $user, $password, $database); 

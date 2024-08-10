@@ -33,7 +33,7 @@ $query = "INSERT INTO usuarios (nombre_completo, tipo_documento, numero_document
 $verificar_email = mysqli_query($conn, "SELECT * FROM registro WHERE email = '$email'");
 
 if (mysqli_num_rows($verificar_email) > 0) {
-    echo "<script>alert('Este correo ya está registrado. Inténtelo nuevamente.'); window.location = '../sesion.php';</script>";
+    echo "<script>alert('Este correo ya está registrado. Inténtelo nuevamente.'); window.location = '../Formularioinicio.html';</script>";
     exit();
 }
 
@@ -41,15 +41,15 @@ if (mysqli_num_rows($verificar_email) > 0) {
 $verificar_usuario = mysqli_query($conn, "SELECT * FROM registro WHERE usuario = '$usuario'");
 
 if (mysqli_num_rows($verificar_usuario) > 0) {
-    echo "<script>alert('Este usuario ya existe. Por favor, elige otro.'); window.location = '../sesion.php';</script>";
+    echo "<script>alert('Este usuario ya existe. Por favor, elige otro.'); window.location = '../Formularioinicio';</script>";
     exit();
 }
 $ejecutar = mysqli_query($conn, $query);
 
 if($ejecutar){
-    echo "<script>alert('Registro exitoso!!'); window.location = '../sesion.php';</script>";
+    echo "<script>alert('Registro exitoso!!'); window.location = '../Formularioinicio';</script>";
 }else{
-    echo "<script>alert('Error al registrar, porfavor verifica tus datos.'); window.location = '../sesion.php';</script>";
+    echo "<script>alert('Error al registrar, porfavor verifica tus datos.'); window.location = '../Formularioinicio';</script>";
 }
 
 // ejecutar la consulta para insertar el nuevo usuario en la base de datos

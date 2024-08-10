@@ -16,46 +16,56 @@
 
 <body>
     
-    <div class="container">
+    <div class="container" id="container">
     
         <div class="form-content">
             <img class="logo" src="Img/logo_otimar.png" alt="">
             <h1 id="title">Bienvenido</h1> <!-- Titulo formulario -->
             <h2 id="title">Ingrese usuario y contraseña</h2> <!-- Titulo formulario -->
-    
-            <form action="validar.php" method="POST">
+            
+            <!--action="validar.php" method="POST"-->
+            <form action="index.html" method="get" id="form">
     
                 <div class="input-group">
                     
                     <!-- casilla usuario-->
-                    <div class="input-field" id="nameInput">
+                    <div class="input-field" class="username" id="#usuarioDiv">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Usuario">
+                        <label for="usuario"></label>
+                        <input type="usuario" id="usuario" placeholder="usuario">
                     </div>
+
                     <!-- casilla Contraseña-->
-                    <div class="input-field">
+                    <div class="input-field" class="username" id="#contraseñaDiv">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="text" placeholder="Contraseña">
+                        <label for="contraseña"></label>
+                        <input type="contraseña"  id="contraseña" placeholder="contraseña">
                     </div>
     
                 </div>
-
-                <a href="index.html">
+                
+                <!-- botón iniciar sesión  href="index.html"-->
+                <a>
                     <div class="btn-field">
-                        <button id="singUp" type="button">Iniciar sesión</button>
+                        <button id="singUp" type="submit"  value="Inciar Sesion">Iniciar sesión</button>
                     </div>
                 </a>
-    
+                <!-- preguntas finales -->
                 <div class="forgotpwd">
                     <label>¿Olvidaste tu contraseña?</label> <a href="#">Click aquí</a>
                 </div>
+                <!--<input type="submit" onclick='return enviarFormulario ();' value="Iniciar sesión"-->
     
             </form>
+
+           
     
         </div>
     </div>
     
-    <script src="scriptformularios"></script>
+    <!--<script src="scriptformularios.js"></script>-->
+    <script type="module" src="..js/app.js"></script>
+
 
     
 </body>
